@@ -1,0 +1,220 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav id="navbar" >
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Contact Me">Work Wih Me</a></li>
+        </ul>
+    </nav>
+    <div id="welcome-section">
+        <h1>Hey i am shubham </h1>
+        <p>a FrontEnd Devloper</p>
+    </div>
+    <div id="projects">        
+        <div class="project-tile">            
+            <h4>Here is some freecodecamp projects</h4>
+            <div class="projects-grid">
+            <a href="file:///D:/Study%20Material/Never%20Stop%20Learning%20Something%20New/FullStack%20Web%20Development/Proper%20Learning/Projects%20&%20Certificates/Project%20-%204%20Product%20Landing%20Page/Again.html" target="_blank" class="task" >Landing Page Project</a>
+            <a href="file:///D:/Study%20Material/Never%20Stop%20Learning%20Something%20New/FullStack%20Web%20Development/Proper%20Learning/Projects%20&%20Certificates/Project%20-%201%20Survey%20Form/Survey-form.html" target="_blank" class="task" >Survey Form Project</a>
+            <a href="file:///D:/Study%20Material/Never%20Stop%20Learning%20Something%20New/FullStack%20Web%20Development/Proper%20Learning/Projects%20&%20Certificates/Project%20-%202%20Tribute%20Page/Tribute%20page.html" target="_blank" class="task" >Tibute Page Project</a>
+            <a href="file:///D:/Study%20Material/Never%20Stop%20Learning%20Something%20New/FullStack%20Web%20Development/Proper%20Learning/Projects%20&%20Certificates/Project%20-%203%20Technical%20Documentation%20Page/Technical%20Documentation%20Page.html" target="_blank" class="task" >Technical Documentaion Page Project</a>
+            <a href="file:///D:/Study%20Material/Never%20Stop%20Learning%20Something%20New/FullStack%20Web%20Development/Shraddha%20Didi%20Apna%20College/aPna%20clG%20courSe/Codes/Lecture%20-%204%20Mega%20Project/Home.html" target="_blank" class="task" >HTML Mega Project</a>
+        </div>
+        </div>
+    </div>
+        <div id="ContactInfo">
+            <h4>It's time to work together</h4>
+            <a  id="profile-link" class="ContactLink" href="https://github.com/ShubhamMahajan880" target="_blank" >GitHUb Repo</a>
+            <i class="fa fa-github" style="font-size:48px;color:red"></i>
+
+
+
+            <a  id="profile-link" class="ContactLink" href="https://www.linkedin.com/in/shubham-mahajan-2a9a47220/" target="_blank" >LinkedIn</a>
+            <i class="fa fa-linkedin-square" style="font-size:48px;color:red"></i>
+        </div>        
+
+        <footer>
+            <p>A Portfolio by Shubham Mahajan</p> 
+            <p>mAhAjAn dEvElopErS  &copy; - 2023   </p>
+        </footer>
+
+    
+
+
+    
+    
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:red;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}    
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+    float: right;
+    margin: 15px 15px;
+    padding: 12px 17px;
+    display: flex;
+    font-size: small;
+}
+
+nav ul li{
+    color: tomato;
+    font-size: large;
+    text-align: end;
+    margin: 5px 10px;
+    padding: 5px 10px;
+}
+
+nav ul li :hover{
+    background-color:wheat;
+    border-radius: 10px;
+    
+}
+
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+h1{
+    color: aliceblue;    
+}
+p{
+    color: greenyellow;
+}
+
+.project-tile{
+     
+    padding: 10rem 2rem;
+    text-align: center;
+    background-color:purple;
+}
+
+.project-tile h4{
+    width: 500px;
+    color: wheat;
+    font-size: xx-large;
+    font-weight: 400;    
+    margin: 0 auto 6rem auto;
+    border-bottom: 2px solid red;
+    text-transform: capitalize;
+    text-decoration:double;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.task{
+    background-color: turquoise;
+    box-shadow: #181719 3px;
+    border-radius: 1px;
+    box-sizing: inherit;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+#ContactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background:black;
+}
+
+#ContactInfo h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-size: large;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.ContactLink{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    color: yellow;
+}
+
+#fab fa-github{
+    content: "\f09b";
+}
+
+footer{
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: black;
+    border-top: 4px solid red;  
+}
+footer > p {
+    margin: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        background-color: turquoise;
+    }
+    
+}
+
+
+
+
+** end of undefined **
+
